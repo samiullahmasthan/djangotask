@@ -64,7 +64,7 @@ class incomingView(APIView):
           return Response({"error":"http method is delete"})
         print("data sending")
         
-      return Response({"message":"data sent to destination succefully"})
+      return Response({"message":"data sent to destination succefully","data":request.data})
     
   
     else:
